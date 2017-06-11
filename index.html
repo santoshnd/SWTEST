@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="libs/angular/angular.min.js"></script>
+<script src="libs/ui-router/angular-ui-router.min.js"></script>
+
+<style>
+  td,th{
+    border: 1px solid green;
+    border-collapse: collapse;
+    padding-left: 25px;
+    padding-right:25px;
+  }
+</style>
+
+</head>
+
+<body>
+<div class="container" ng-app="myApp">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header">
+        <h1>{{ title }}</h1>
+      </div>
+    </div>
+    
+    <div ui-view></div>
+    
+  </div>
+
+</div>
+<script src="app.js"></script>
+<script src="login/login-controller.js"></script>
+<script src="home/home-controller.js"></script>
+
+</body>
+</html>
